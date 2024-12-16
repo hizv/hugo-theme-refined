@@ -1,4 +1,4 @@
-module gitlab.com/kaushalmodi/hugo-theme-refined
+module github.com/anthonygraca/hugo-theme-refined
 
 go 1.16
 
