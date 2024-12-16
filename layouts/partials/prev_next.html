@@ -14,12 +14,12 @@
      This is inside the 'container' class div block that began in default_head.html.
 -->
 <div class="prev-next-navigator clear-float">
-    {{ with .NextPage }}
+    {{ with .Next }}
         <span class="prev-post left no-text-decoration">
             <a href="{{ .Permalink }}">«&nbsp;{{ .Title }}</a>
         </span>
     {{end}}
-    {{ with .PrevPage }}
+    {{ with .Prev }}
         <span class="next-post right no-text-decoration">
             <a href="{{ .Permalink }}">{{ .Title }}&nbsp;»</a>
         </span>
