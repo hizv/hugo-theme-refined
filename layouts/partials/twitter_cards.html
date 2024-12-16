@@ -32,7 +32,7 @@
 {{- end }}
 <meta name="twitter:title" content="{{ .Title }}"/>
 <meta name="twitter:description" content="{{ partial "get_meta_description" . }}" />
-{{ with site.Social.twitter -}}
+{{ with site.Params.Social.twitter -}}
     <meta name="twitter:site" content="@{{ . }}"/>
     <meta name="twitter:creator" content="@{{ . }}"/>
 {{ end -}}

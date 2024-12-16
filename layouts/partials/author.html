@@ -1,5 +1,5 @@
 {{ $author := (slice) }} <!-- Set the $author to be an empty slice by default -->
-{{ with site.Author.name }}
+{{ with site.Params.Author.name }}
     {{ $author = (slice .) }} <!-- Set the default to site author, if specified -->
 {{ end }}
 <!-- Override $author value with that present in page front-matter -->
