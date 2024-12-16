@@ -23,10 +23,10 @@
             on {{ site.Title }}</description>
         {{ with site.LanguageCode }}<language>{{ . }}</language>{{ end }}
         {{ with site.Copyright }}<copyright>{{ . }}</copyright>{{end}}
-        {{- with site.Author.name -}}
-            {{ if site.Author.email }}
-                <managingEditor>{{ printf "%s (%s)" site.Author.email . }}</managingEditor>
-                <webMaster>{{ printf "%s (%s)" site.Author.email . }}</webMaster>
+        {{- with site.Params.Author.name -}}
+            {{ if site.Params.Author.email }}
+                <managingEditor>{{ printf "%s (%s)" site.Params.Author.email . }}</managingEditor>
+                <webMaster>{{ printf "%s (%s)" site.Params.Author.email . }}</webMaster>
             {{- else -}}
                 <managingEditor>{{ . }}</managingEditor>
                 <webMaster>{{ . }}</webMaster>
