@@ -8,7 +8,7 @@
         <data class="p-name" value="{{ .Title }}"></data>
     </header>
     <!-- http://justindunham.net/blog-bells-and-whistles-in-hugo/ -->
-    {{ range where (.Paginator 10).Pages "Type" "in" site.Params.mainSections }}
+    {{ range where (.Paginator 4).Pages "Type" "in" site.Params.mainSections }}
         {{ .Render "summary"}}      <!-- Use layouts/_default/summary.html -->
     {{ end }}
 </div>
