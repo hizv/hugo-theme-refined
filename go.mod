@@ -1,6 +1,6 @@
 module github.com/hizv/hugo-theme-refined
 
-go 1.16
+go 1.24.6
 
 require (
 	github.com/anthonygraca/hugo-atom-feed v0.0.0-20241216025246-ea8b3c5f63ed // indirect
